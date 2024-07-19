@@ -1,0 +1,81 @@
+<div class="text-layout">
+  <h1>Pipes Básicos</h1>
+  <p>
+    Pipes incluídos en Angular - Usualmente en el Commun Module.
+  </p>
+</div>
+
+<div class="p-grid ">
+  <div class="p-col-12 p-md-4 p-sm-6">
+    <p-card
+      header="uppercase"
+      [subheader]="nameLower">
+      {{ nameLower | uppercase }}
+    </p-card>
+  </div>
+  <div class="p-col-12 p-md-4 p-sm-6">
+    <p-card
+      header="lowercase"
+      [subheader]="nameUpper">
+      {{ nameUpper | lowercase }}
+    </p-card>
+  </div>
+  <div class="p-col-12 p-md-4 p-sm-6">
+    <p-card
+      header="titlecase"
+      [subheader]="fullName">
+      {{ fullName | titlecase }}
+    </p-card>
+  </div>
+</div>
+
+<div class="text-layout">
+  <h1>Date | Fecha | Pipe</h1>
+  <p>
+    Pipe para mostrar las fechas.
+  </p>
+</div>
+
+<div class="p-grid">
+  <div class="p-col-12 p-md-6">
+    <p-card>
+      <ul>
+        <li>fecha</li>
+        <li>fecha | date</li>
+        <li>fecha | date: 'short'</li>
+        <li>fecha | date: 'long'</li>
+        <li>fecha | date: 'mediumDate'</li>
+        <li>fecha | date: 'fullDate'</li>
+        <li>fecha | date: 'MMMM'</li>
+        <li>fecha | date: 'MMMM dd, yyyy'</li>
+      </ul>
+
+      <hr>
+      <ul>
+        <li>fecha | date: 'long':'GMT-6'</li>
+        <li>fecha | date: 'long':'GMT-02'</li>
+        <li>fecha | date: 'long':'':'es-PE</li>
+      </ul>
+    </p-card>
+  </div>
+  <div class="p-col-12 p-md-6">
+    <p-card>
+      <ul>
+        <li>{{ customDate }}</li>
+        <li>{{ customDate | date }}</li>
+        <li>{{ customDate | date: 'short' }}</li>
+        <li>{{ customDate | date: 'long' }}</li>
+        <li>{{ customDate | date: 'mediumDate' }}</li>
+        <li>{{ customDate | date: 'fullDate' }}</li>
+        <li>{{ customDate | date: 'MMMM' }}</li>
+        <li>{{ customDate | date: 'MMMM dd, yyyy' }}</li>
+      </ul>
+      <hr>
+      <ul>
+        <li>{{ customDate | date: 'long':'GMT-6' }}</li>
+        <li>{{ customDate | date: 'long':'GMT+02' }}</li>
+        <li>{{ customDate | date: 'long':'':'es-PE' }}</li>
+      </ul>
+    </p-card>
+  </div>
+</div>
