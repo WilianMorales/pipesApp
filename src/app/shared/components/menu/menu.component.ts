@@ -42,8 +42,16 @@ export class MenuComponent implements OnInit {
         label: 'Papis Personalizados',
         icon: 'pi pi-cog',
         items: [
-          { label: 'Delete', icon: 'pi pi-fw pi-trash' },
-          { label: 'Refresh', icon: 'pi pi-fw pi-refresh' }
+          {
+            label: 'Custome Pipes',
+            icon: 'pi pi-cog',
+            routerLink: 'custome'
+          },
+          {
+            label: 'domSeguro and Password',
+            icon: 'pi pi-fw pi-globe',
+            routerLink: 'customePipe'
+          }
         ]
       }
     ]
