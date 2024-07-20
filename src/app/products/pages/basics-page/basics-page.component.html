@@ -9,21 +9,21 @@
   <div class="p-col-12 p-md-4 p-sm-6">
     <p-card
       header="uppercase"
-      [subheader]="nameLower">
+      subheader="Coventir en mayusculas: {{nameLower}}">
       {{ nameLower | uppercase }}
     </p-card>
   </div>
   <div class="p-col-12 p-md-4 p-sm-6">
     <p-card
       header="lowercase"
-      [subheader]="nameUpper">
+      subheader="Coventir en minusculas: {{nameUpper}}">
       {{ nameUpper | lowercase }}
     </p-card>
   </div>
   <div class="p-col-12 p-md-4 p-sm-6">
     <p-card
       header="titlecase"
-      [subheader]="fullName">
+      subheader="Convierte las primeras en Mayusculas">
       {{ fullName | titlecase }}
     </p-card>
   </div>
@@ -46,7 +46,7 @@
         <li>fecha | date: 'long'</li>
         <li>fecha | date: 'mediumDate'</li>
         <li>fecha | date: 'fullDate'</li>
-        <li>fecha | date: 'MMMM'</li>
+        <li>fecha | date: 'MMMM - dd'</li>
         <li>fecha | date: 'MMMM dd, yyyy'</li>
       </ul>
 
@@ -67,7 +67,7 @@
         <li>{{ customDate | date: 'long' }}</li>
         <li>{{ customDate | date: 'mediumDate' }}</li>
         <li>{{ customDate | date: 'fullDate' }}</li>
-        <li>{{ customDate | date: 'MMMM' }}</li>
+        <li>{{ customDate | date: 'MMMM - dd' }}</li>
         <li>{{ customDate | date: 'MMMM dd, yyyy' }}</li>
       </ul>
       <hr>
